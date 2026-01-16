@@ -1,0 +1,9 @@
+echo "opencv-python" >> requirements.txt
+echo "numpy" >> requirements.txt
+
+cat <<EOF > .gitignore
+*.png
+__pycache__/
+logs/*.json
+.env
+EOF
