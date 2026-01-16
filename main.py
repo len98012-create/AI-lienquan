@@ -1,19 +1,17 @@
 cat <<EOF > main.py
 from core.controller import Controller
 from core.vision import Vision
+from core.data_manager import DataManager
 import time
 
-def main():
+def start_bot():
     ctrl = Controller()
     vis = Vision()
+    dm = DataManager()
     
-    print("--- AI Liên Quân Super Ready ---")
-    # Ví dụ: Tự động nhấn nút Bắt đầu nếu thấy ảnh matching_button.png
-    while True:
-        # Thêm logic xử lý tại đây
-        print("AI đang quét màn hình...")
-        time.sleep(5)
-
+    dm.log("Hệ thống AI đang khởi động trên Linux...")
+    # Thêm vòng lặp xử lý game tại đây
+    
 if __name__ == "__main__":
-    main()
+    start_bot()
 EOF
